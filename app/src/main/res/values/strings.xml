@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">04_CheckBox_RadioButton</string>
+
+    <string name="radioDecimal">Decimal</string>
+    <string name="radioBinario">Binario</string>
+    <string name="radioOctal">Octal</string>
+    <string name="radioHexadecimal">Hexadecimal</string>
+
+    <string name="cajaNumeroIngresado">Ingresa un número</string>
+
+    <string name="cboxBinario">Binario</string>
+    <string name="cboxOctal">Octal</string>
+    <string name="cboxHexadecimal">Hexadecimal</string>
+
+    <string name="cajaResBinario">res Binario</string>
+    <string name="cajaResOctal">res Octal</string>
+    <string name="cajaResHexadecimal">res Hexa</string>
+
+    <string name="btnConvertir">CONVERTIR</string>
+
+
+
+</resources>
