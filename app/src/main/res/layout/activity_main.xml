@@ -38,110 +38,99 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo">
 
         <RadioButton
-            android:id="@+id/btnDecimal"
+            android:id="@+id/radio_decimal"
             android:layout_width="97dp"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="@string/radioDecimal" />
 
         <RadioButton
-            android:id="@+id/btnBinario"
+            android:id="@+id/radio_binario"
             android:layout_width="93dp"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="@string/radioBinario" />
 
         <RadioButton
-            android:id="@+id/btnOctal"
+            android:id="@+id/radio_octal"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="@string/radioOctal" />
 
         <RadioButton
-            android:id="@+id/btnHexa"
+            android:id="@+id/radio_hexa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="@string/radioHexadecimal" />
 
     </RadioGroup>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cb_binario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="36dp"
+        android:onClick="onClick"
         android:text="@string/cboxBinario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cajaNumIngresado" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cb_octal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="76dp"
+        android:onClick="onClick"
         android:text="@string/cboxOctal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_binario" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cb_hexadecimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="72dp"
+        android:onClick="onClick"
         android:text="@string/cboxHexadecimal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_octal" />
 
-    <EditText
-        android:id="@+id/resBinario"
+    <TextView
+        android:id="@+id/res_binario"
         android:layout_width="206dp"
         android:layout_height="57dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="51dp"
         android:ems="10"
         android:hint="@string/cajaResBinario"
-        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cajaNumIngresado" />
 
-    <EditText
-        android:id="@+id/resOctal"
+    <TextView
+        android:id="@+id/res_octal"
         android:layout_width="201dp"
         android:layout_height="59dp"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="51dp"
         android:ems="10"
         android:hint="@string/cajaResOctal"
-        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resBinario" />
+        app:layout_constraintTop_toBottomOf="@+id/res_binario" />
 
-    <EditText
-        android:id="@+id/resHexa"
+    <TextView
+        android:id="@+id/res_hexa"
         android:layout_width="214dp"
         android:layout_height="59dp"
         android:layout_marginTop="61dp"
         android:layout_marginEnd="41dp"
         android:ems="10"
         android:hint="@string/cajaResHexadecimal"
-        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resOctal" />
-
-    <Button
-        android:id="@+id/btnConvertir"
-        android:layout_width="204dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="103dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:drawable/btn_star_big_on"
-        android:backgroundTint="#E91E63"
-        android:onClick="convertir"
-        android:text="@string/btnConvertir"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/res_octal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
