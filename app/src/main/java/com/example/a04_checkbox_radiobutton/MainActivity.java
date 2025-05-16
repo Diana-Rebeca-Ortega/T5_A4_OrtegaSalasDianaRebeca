@@ -1,5 +1,6 @@
 package com.example.a04_checkbox_radiobutton;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -91,6 +93,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         validacionSistemaNumerico(radioBinario,"B");
         validacionSistemaNumerico(radioOctal,"O");
         validacionSistemaNumerico(radioHexadecimal,"H");
+
+        try {
+
         //check box Binario***************************************
         if (cbBinario.isChecked()){
             //de binario a binario
@@ -174,7 +179,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (cbHexadecimal.isChecked()==false ){
             resHexa.setText("" );
         }
-
+        }catch (Exception e){
+            AlertDialog.Builder alerta = new AlertDialog.Builder(this);
+            alerta.setTitle("ERROR");
+            alerta.setMessage("No se puede realizar una conversion si no has ingresado una cadena númerica");
+            alerta.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    cbBinario.setChecked(false);
+                    cbOctal.setChecked(false);
+                    cbHexadecimal.setChecked(false);
+                }
+            });
+            alerta.show();
+        }
 
 
     }
