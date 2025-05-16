@@ -19,10 +19,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/cajaNumIngresado"
-        android:layout_width="335dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="12dp"
+        android:id="@+id/caja_num_ingresado"
+        android:layout_width="343dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
         android:ems="10"
         android:hint="@string/cajaNumeroIngresado"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
         android:onClick="onClick"
         android:text="@string/cboxBinario"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaNumIngresado" />
+        app:layout_constraintTop_toBottomOf="@+id/caja_num_ingresado" />
 
     <CheckBox
         android:id="@+id/cb_octal"
@@ -109,7 +109,7 @@
         android:ems="10"
         android:hint="@string/cajaResBinario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaNumIngresado" />
+        app:layout_constraintTop_toBottomOf="@+id/caja_num_ingresado" />
 
     <TextView
         android:id="@+id/res_octal"

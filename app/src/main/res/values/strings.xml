@@ -6,7 +6,7 @@
     <string name="radioOctal">Octal</string>
     <string name="radioHexadecimal">Hexadecimal</string>
 
-    <string name="cajaNumeroIngresado">Ingresa un número</string>
+    <string name="cajaNumeroIngresado">Antes de ingresar un número selecciona su Sistema Numerico en los RadioButtons</string>
 
     <string name="cboxBinario">Binario</string>
     <string name="cboxOctal">Octal</string>
